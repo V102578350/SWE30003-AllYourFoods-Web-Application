@@ -1,0 +1,15 @@
+.hero {
+  position: relative;
+  background: url(../images/grocery-store-hero.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 385px;
+  border-bottom: 10px solid $blue;
+
+  h2 {
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    text-shadow: 1px 1px 5px rgba($black, 0.8);
+  }
+}

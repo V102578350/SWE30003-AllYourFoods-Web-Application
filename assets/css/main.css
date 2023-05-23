@@ -1,0 +1,106 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  background: #1b262c;
+  font-size: 10px;
+  color: #ffffff;
+}
+
+h1 {
+  font-size: 38px;
+  line-height: 38px;
+}
+
+h2 {
+  font-size: 24px;
+  line-height: 24px;
+}
+
+h3 {
+  font-size: 22px;
+  line-height: 22px;
+}
+
+h4 {
+  font-size: 20px;
+  line-height: 20px;
+}
+
+h5 {
+  font-size: 12px;
+  line-height: 12px;
+}
+
+h6 {
+  font-size: 10px;
+  line-height: 10px;
+}
+
+p {
+  font-size: 10px;
+  line-height: 10px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  background: #0f4c75;
+}
+.header-user-section {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  padding: 1rem;
+}
+.header-title-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1.25rem;
+}
+.header-title-section img {
+  width: 42px;
+}
+.header-title-section .header-title-section-text {
+  display: flex;
+  gap: 0.5rem;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.btn {
+  border: 2px solid #000000;
+  border-radius: 8px;
+  padding: 1rem 2.5rem;
+  cursor: pointer;
+  transition: 0.4s ease;
+  font-weight: bold;
+}
+.btn:hover {
+  background: #000000;
+  color: #ffffff;
+}
+
+.hero {
+  position: relative;
+  background: url(../images/grocery-store-hero.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 385px;
+  border-bottom: 10px solid #3282b8;
+}
+.hero h2 {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8);
+}/*# sourceMappingURL=main.css.map */

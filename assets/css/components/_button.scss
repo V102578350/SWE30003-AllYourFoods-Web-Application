@@ -1,0 +1,13 @@
+.btn {
+  border: 2px solid $black;
+  border-radius: 8px;
+  padding: 1rem 2.5rem;
+  cursor: pointer;
+  transition: 0.4s ease;
+  font-weight: bold;
+
+  &:hover {
+    background: $black;
+    color: $white;
+  }
+}

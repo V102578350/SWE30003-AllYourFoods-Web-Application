@@ -1,0 +1,52 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+@import "./components/variables";
+@import "./components/mixins";
+
+html {
+  background: $background;
+  font-size: 10px;
+  color: $white;
+}
+
+h1 {
+  font-size: $base-font-size * 3.8;
+  line-height: $base-font-size * 3.8;
+}
+h2 {
+  font-size: $base-font-size * 2.4;
+  line-height: $base-font-size * 2.4;
+}
+h3 {
+  font-size: $base-font-size * 2.2;
+  line-height: $base-font-size * 2.2;
+}
+h4 {
+  font-size: $base-font-size * 2;
+  line-height: $base-font-size * 2;
+}
+h5 {
+  font-size: $base-font-size * 1.2;
+  line-height: $base-font-size * 1.2;
+}
+
+h6 {
+  font-size: $base-font-size;
+  line-height: $base-font-size;
+}
+
+p {
+  font-size: $base-font-size;
+  line-height: $base-font-size;
+}
+
+@import "./components/header";
+@import "./components/button";
+@import "./components/hero";
