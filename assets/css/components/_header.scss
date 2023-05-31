@@ -2,12 +2,115 @@
   display: flex;
   justify-content: space-between;
   background: $dark-blue;
+  position: sticky;
+  z-index: 1;
+  top: 0;
 
   &-user-section {
     display: flex;
     flex-direction: row;
     gap: 1rem;
     padding: 1rem;
+
+    .user-container {
+      display: flex;
+      gap: 1rem;
+
+      .user-icon-links {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .cart-link.has-items {
+          position: relative;
+
+          &::before {
+            content: attr(data-item-count);
+            position: absolute;
+            top: -5px;
+            right: -5px;
+            height: 20px;
+            width: 20px;
+            border-radius: 50%;
+            background: black;
+            font-size: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: $white;
+          }
+        }
+
+        a {
+          display: flex;
+          align-items: center;
+          position: relative;
+
+          img {
+            width: 34px;
+          }
+
+          & + a {
+            margin-left: 2.5rem;
+            &::after {
+              content: "";
+              position: absolute;
+              height: 55%;
+              background: $white;
+              width: 2px;
+              left: -1.4rem;
+              top: 50%;
+              transform: translateY(-50%);
+            }
+          }
+        }
+      }
+
+      .user-info {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: center;
+        min-width: 125px;
+
+        h4 {
+          font-size: 16px;
+          width: max-content;
+        }
+
+        ul {
+          list-style: none;
+          display: flex;
+          align-items: center;
+          li {
+            display: inline-block;
+            width: max-content;
+
+            a {
+              text-decoration: none;
+              color: orange;
+            }
+
+            & + li {
+              margin-left: 1.5rem;
+              position: relative;
+
+              &::after {
+                content: "";
+                width: 5px;
+                height: 5px;
+                border-radius: 50%;
+                background: $white;
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                left: -9.5px;
+              }
+            }
+          }
+        }
+      }
+    }
   }
 
   &-title-section {
@@ -16,6 +119,7 @@
     align-items: center;
     gap: 1.5rem;
     padding: 1.25rem;
+    text-decoration: none !important;
 
     img {
       width: 42px;
@@ -27,6 +131,7 @@
       flex-direction: column;
       align-items: flex-start;
       justify-content: center;
+      color: $white;
     }
   }
 }

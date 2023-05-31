@@ -1,31 +1,25 @@
 <?php
 
+include 'Cart.php';
+
 class User {
-    private $id;
-    private $username;
-    private $password;
-    private $status;
+    public $id;
+    public $firstname;
+    public $lastname;
+    public $email;
+    public $address;
+    public $username;
+    public $status;
+    public $cart;
 
-    public function __construct($id, $username, $password, $status) {
+    public function __construct($id, $firstname, $lastname, $email, $address, $username, $status) {
         $this->id = $id;
+        $this->firstname = $firstname;
+        $this->lastname = $lastname;
+        $this->email = $email;
+        $this->address = $address;
         $this->username = $username;
-        $this->password = $password;
         $this->status = $status;
-    }
-
-    public function getId() {
-        return $this->id;
-    }
-
-    public function getUsername() {
-        return $this->username;
-    }
-
-    public function getPassword() {
-        return $this->password;
-    }
-
-    public function getStatus() {
-        return $this->status;
+        $this->cart = new Cart();
     }
 }

@@ -47,6 +47,34 @@ p {
   line-height: $base-font-size;
 }
 
+table {
+  width: 100%;
+  margin-top: 2rem;
+  border-collapse: collapse;
+
+  td,
+  th {
+    text-align: left;
+    font-size: 16px;
+    border-collapse: collapse;
+    border: 1px solid $white;
+    padding: 0.5rem;
+  }
+}
+
+input[type="text"],
+input[type="password"],
+input[type="number"] {
+  border-radius: 0.5rem;
+  border: none;
+  padding: 0.25rem;
+}
+
+@import "./components/shell";
+@import "./components/section";
 @import "./components/header";
 @import "./components/button";
 @import "./components/hero";
+@import "./components/popup";
+@import "./components/product";
+@import "./components/cart";

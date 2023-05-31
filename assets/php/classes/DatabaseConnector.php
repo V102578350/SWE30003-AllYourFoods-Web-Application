@@ -62,6 +62,10 @@ class DatabaseConnector
         return $stmt->get_result();
     }
 
+    public function getLastInsertId() {
+        return $this->connection->insert_id;
+    }
+
     private function getParamType($value)
     {
         switch (gettype($value)) {

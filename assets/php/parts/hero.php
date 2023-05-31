@@ -1,3 +1,5 @@
 <div class="hero">
-    <h2>Welcome to All Your Health Foods!</h2>
+    <div class="shell">
+        <h2>Welcome to All Your Healthy Foods!</h2>
+    </div>
 </div>

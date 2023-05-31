@@ -1,0 +1,14 @@
+.cart {
+  width: 100%;
+
+  .cart-total {
+    padding: 2rem 0;
+    margin: 3.5rem 0;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    p {
+      font-size: 16px;
+      line-height: 22px;
+    }
+  }
+}
